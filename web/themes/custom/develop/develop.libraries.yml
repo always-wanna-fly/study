@@ -1,0 +1,11 @@
+framework:
+  css:
+    theme:
+      css/style.css: {}
+
+newspage:
+  css:
+    theme:
+      css/newspage.css: {}
+
+

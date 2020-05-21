@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function develop_preprocess_node(&$variables)
+{
+
+  $node = $variables['node'];
+
+  $variables['username'] = $variables['node']->getOwnerId();
+
+  $variables['nameuser'] = 'Id user is ' . $node->id();
+  $variables['type_content'] = $variables['node']->getType();
+}

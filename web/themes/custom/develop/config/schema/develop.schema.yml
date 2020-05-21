@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the develop theme.
+
+develop.settings:
+  type: theme_settings
+  label: 'develop settings'
