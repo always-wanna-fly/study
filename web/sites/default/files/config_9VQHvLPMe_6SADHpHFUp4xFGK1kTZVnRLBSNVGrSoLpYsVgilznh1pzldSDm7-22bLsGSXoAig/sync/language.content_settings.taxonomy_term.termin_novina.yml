@@ -1,0 +1,11 @@
+uuid: 6947e7b4-6d18-4f8f-aa08-4ea201bb2dc7
+langcode: uk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.termin_novina
+id: taxonomy_term.termin_novina
+target_entity_type_id: taxonomy_term
+target_bundle: termin_novina
+default_langcode: site_default
+language_alterable: false

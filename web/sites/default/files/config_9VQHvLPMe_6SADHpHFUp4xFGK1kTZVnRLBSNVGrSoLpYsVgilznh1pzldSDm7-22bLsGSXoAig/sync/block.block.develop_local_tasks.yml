@@ -1,0 +1,22 @@
+uuid: 94285004-d28d-44ad-9a92-fd1ec3ea6b49
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - develop
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: develop_local_tasks
+theme: develop
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

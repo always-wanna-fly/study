@@ -1,0 +1,22 @@
+uuid: 0eebf207-a29f-4b3e-9501-2fc2a4c63ce5
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - develop
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: develop_content
+theme: develop
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Основний вміст сторінки'
+  provider: system
+  label_display: '0'
+visibility: {  }

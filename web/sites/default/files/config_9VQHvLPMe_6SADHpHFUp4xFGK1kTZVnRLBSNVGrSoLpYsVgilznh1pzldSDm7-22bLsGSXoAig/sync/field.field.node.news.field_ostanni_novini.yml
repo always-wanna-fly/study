@@ -1,0 +1,29 @@
+uuid: da212aa2-6271-4b6b-9c4d-a9dbe3b27a90
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ostanni_novini
+    - node.type.news
+    - taxonomy.vocabulary.termin_novina
+id: node.news.field_ostanni_novini
+field_name: field_ostanni_novini
+entity_type: node
+bundle: news
+label: 'Останні новини'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      termin_novina: termin_novina
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

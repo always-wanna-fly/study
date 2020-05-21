@@ -1,0 +1,22 @@
+uuid: 135adee0-83a0-4e79-8556-8cbc1f96e85a
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - develop
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: develop_messages
+theme: develop
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Повідомлення про стан'
+  provider: system
+  label_display: '0'
+visibility: {  }

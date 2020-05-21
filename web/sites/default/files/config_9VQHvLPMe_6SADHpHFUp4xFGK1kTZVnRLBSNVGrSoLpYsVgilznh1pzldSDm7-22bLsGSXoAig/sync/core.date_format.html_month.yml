@@ -1,0 +1,10 @@
+uuid: 636f19e2-86d3-4cef-b01b-2cfd92a5de7d
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z7KuCUwM_WdTNvLcoltuX3_8d-s-8FZkTN6KgNwF0eM
+id: html_month
+label: 'Місяць HTML'
+locked: true
+pattern: Y-m

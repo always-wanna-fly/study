@@ -1,0 +1,13 @@
+uuid: f1f5aded-4443-47ee-a3e3-ea339998b201
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
+id: node_delete_action
+label: 'Видалити матеріал'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

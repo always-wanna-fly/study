@@ -1,0 +1,15 @@
+uuid: cad89678-1e50-406d-91ea-1c8d7e89904d
+langcode: uk
+status: true
+dependencies: {  }
+name: news_350x233
+label: 'news 350x233'
+effects:
+  879102c8-f0a5-4228-bbc6-5f9ed967dbdd:
+    uuid: 879102c8-f0a5-4228-bbc6-5f9ed967dbdd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 233
+      anchor: center-center

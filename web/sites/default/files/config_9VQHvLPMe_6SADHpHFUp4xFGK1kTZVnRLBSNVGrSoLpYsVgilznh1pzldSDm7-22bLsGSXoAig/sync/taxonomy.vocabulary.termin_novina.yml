@@ -1,0 +1,8 @@
+uuid: 9adba186-9907-4fda-90a4-4e1c9b4cc66f
+langcode: uk
+status: true
+dependencies: {  }
+name: 'Термін новина'
+vid: termin_novina
+description: ''
+weight: 0

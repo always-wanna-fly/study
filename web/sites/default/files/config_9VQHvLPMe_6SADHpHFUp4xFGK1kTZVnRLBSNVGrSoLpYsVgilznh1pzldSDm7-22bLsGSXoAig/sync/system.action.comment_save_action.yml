@@ -1,0 +1,13 @@
+uuid: 9783933a-2b74-420d-b060-0e3f9959c309
+langcode: uk
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: lfyE_snmvfg_EQ3VDyhUtGAXgmqtEiqa46I3bTMg8DU
+id: comment_save_action
+label: 'Зберегти коментар'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

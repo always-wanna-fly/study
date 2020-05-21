@@ -1,0 +1,22 @@
+uuid: 86d4326e-879f-420a-bcd6-b52d94d03e4e
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - develop
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: develop_breadcrumbs
+theme: develop
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Рядки навіґації'
+  provider: system
+  label_display: '0'
+visibility: {  }

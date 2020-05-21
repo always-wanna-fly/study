@@ -1,0 +1,14 @@
+uuid: e6d84980-226a-4436-bfbe-e46d3608e5c4
+name: study
+mail: vovaivanitskyi@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: uk
+default_langcode: uk
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

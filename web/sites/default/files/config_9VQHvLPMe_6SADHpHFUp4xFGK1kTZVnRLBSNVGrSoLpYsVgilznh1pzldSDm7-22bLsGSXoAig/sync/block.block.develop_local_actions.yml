@@ -1,0 +1,20 @@
+uuid: d96f84d3-d1e4-41de-a1fb-cf54cf5f69aa
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - develop
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: develop_local_actions
+theme: develop
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основні адміністративні дії'
+  provider: core
+  label_display: '0'
+visibility: {  }

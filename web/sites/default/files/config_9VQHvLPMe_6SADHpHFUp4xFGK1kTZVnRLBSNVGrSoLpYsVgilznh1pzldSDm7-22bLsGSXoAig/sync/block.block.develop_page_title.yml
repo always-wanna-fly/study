@@ -1,0 +1,20 @@
+uuid: 4cdc245f-c3e5-4b07-8c8b-da81085be6a0
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - develop
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: develop_page_title
+theme: develop
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок сторінки'
+  provider: core
+  label_display: '0'
+visibility: {  }

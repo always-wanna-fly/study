@@ -1,0 +1,7 @@
+name: salsa
+descriptions: salsa is my life
+core: 8.x
+type: module
+package: salsa
+dependencies:
+  - block
