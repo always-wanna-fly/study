@@ -1,0 +1,20 @@
+uuid: 6f636f27-981e-4bc0-a697-940ad55c40a4
+langcode: uk
+status: true
+dependencies:
+  module:
+    - salsa
+  theme:
+    - develop
+id: vlasniyblok
+theme: develop
+region: sidebar_first
+weight: 0
+provider: null
+plugin: custom_block
+settings:
+  id: custom_block
+  label: 'Власний блок'
+  provider: salsa
+  label_display: visible
+visibility: {  }
