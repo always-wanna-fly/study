@@ -1,0 +1,7 @@
+name: study
+recipe: drupal8
+config:
+  webroot: web
+  via: nginx
+  php: 7.3
+  xdebug: true
