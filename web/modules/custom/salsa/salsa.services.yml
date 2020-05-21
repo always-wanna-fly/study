@@ -3,3 +3,8 @@ services:
     class: Drupal\salsa\EventSubscriber\RouteSubscriber
     tags:
       - { name: event_subscriber }
+
+  salsa.middleware_login:
+    class: Drupal\salsa\StackMiddleware\MiddlewareLogin
+    tags:
+      - { name: http_middleware, priority: 150 }
