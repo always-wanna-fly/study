@@ -8,4 +8,8 @@ services:
     class: Drupal\salsa\StackMiddleware\MiddlewareLogin
     tags:
       - { name: http_middleware, priority: 150 }
-      -
+
+  salsa.first_middleware:
+    class: Drupal\salsa\FirstMiddleware
+    tags:
+      - { name: http_middleware, priority: 150 }
