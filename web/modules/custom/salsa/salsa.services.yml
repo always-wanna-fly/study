@@ -1,0 +1,5 @@
+services:
+  salsa.route_subscriber:
+    class: Drupal\salsa\EventSubscriber\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

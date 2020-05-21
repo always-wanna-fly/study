@@ -1,0 +1,8 @@
+salsa.first_page:
+  path: 'first-page'
+  defaults:
+    _controller: '\Drupal\salsa\Controller\FirstPage::content'
+    _title: 'First page'
+  requirements:
+    _permission: "access content"
+
