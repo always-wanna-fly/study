@@ -7,6 +7,9 @@ namespace Drupal\salsa\Controller;
 /*
  * Provides route for our custom module
  */
+
+use Drupal\Core\Controller\ControllerBase;
+
 class FirstPage{
   /*
    * displays simple page

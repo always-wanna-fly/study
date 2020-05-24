@@ -39,7 +39,6 @@ class FirstMiddleware implements HttpKernelInterface {
       return new Response($this->t('Sosi beech!'), 403);
     }
 
-
     return $this->httpKernel->handle($request, $type, $catch);
   }
 

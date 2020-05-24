@@ -1,0 +1,85 @@
+<?php
+
+///**
+// * @file
+// * Main file for hooks and custom functions.
+// */
+//
+///**
+// * Implements hook_preprocess_HOOK().
+// */
+//function salsa_preprocess_html(&$variables) {
+//  $random_message = \Drupal::service('salsa.random_message')->getRandomMessage();
+//  drupal_set_message($random_message);
+//}
+use Drupal\Component\Utility\NestedArray;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function salsa_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+  $form['wellcome']=[
+    '#markup'=>'<h2>Hello world</h2>',
+    '#weight'=>-100,
+  ];
+
+  $form['name']['#attributes']['placeholder'] = 'Enter your username';
+  $form['pass']['#attributes']['placeholder'] = 'Enter your password';
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function salsa_user_login($account)
+{
+  $message = new \Drupal\Core\StringTranslation\TranslatableMarkup('Раді вас бачити, <strong>@username</strong>!' , [
+    '@username' => $account->getDisplayName(),
+  ]);
+  \Drupal::messenger()->addMessage($message);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function salsa_preprocess_page(&$variables)
+{
+  $messages = [
+    'Default message',
+  ];
+
+  // hook_salsa_page_message().
+  $result = \Drupal::moduleHandler()->invokeAll('salsa_page_message');
+  $messages = NestedArray::mergeDeep($messages, $result);
+
+  //hook_salsa_page_messages_alter().
+  \Drupal::moduleHandler()->alter('salsa_page_messages', $messages);
+  if (!empty($messages)){
+    foreach ($messages as $message){
+      \Drupal::messenger()->addMessage($message);
+    }
+  }
+}
+
+/**
+ * Implements hook_salsa_page_message().
+ */
+function salsa_salsa_page_message()
+{
+  return [
+    'hello world',
+    'hello world 2',
+  ];
+}
+
+/**
+ * Implements hook_salsa_page_message().
+ */
+/**
+ * Implements hook_salsa_page_messages_alter().
+ */
+function salsa_salsa_page_messages_alter(&$messages)
+{
+  $messages[2] = 'We repleced "Hello world "';
+  $messages[]= 'and add new one';
+}

@@ -13,3 +13,6 @@ services:
     class: Drupal\salsa\FirstMiddleware
     tags:
       - { name: http_middleware, priority: 150 }
+
+  salsa.random_message:
+    class: Drupal\salsa\RandomMessageGenerator
